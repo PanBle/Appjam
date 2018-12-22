@@ -17,6 +17,7 @@
 		BEED1C6C21CD4EF600A30203 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEED1C6A21CD4EF600A30203 /* LaunchScreen.storyboard */; };
 		BEED1C7721CD4EF600A30203 /* appjamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEED1C7621CD4EF600A30203 /* appjamTests.swift */; };
 		BEED1C8221CD4EF600A30203 /* appjamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEED1C8121CD4EF600A30203 /* appjamUITests.swift */; };
+		BEED1C9021CE52CB00A30203 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEED1C8F21CE52CB00A30203 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		BEED1C7D21CD4EF600A30203 /* appjamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appjamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEED1C8121CD4EF600A30203 /* appjamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appjamUITests.swift; sourceTree = "<group>"; };
 		BEED1C8321CD4EF600A30203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEED1C8F21CE52CB00A30203 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		C57C49EFC40FC72C5C6278A5 /* Pods-appjamUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appjamUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-appjamUITests/Pods-appjamUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E90E0DC87DA7554B2789DEF5 /* Pods-appjamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appjamTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-appjamTests/Pods-appjamTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEED1C9021CE52CB00A30203 /* CoreMotion.framework in Frameworks */,
 				724CE34F550726D1292E2099 /* Pods_appjam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +95,7 @@
 		70B617CC12F91F415693CE87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BEED1C8F21CE52CB00A30203 /* CoreMotion.framework */,
 				11A77DFAB4F1C7F4059DF114 /* Pods_appjam.framework */,
 				0353CD0EAAA0E1FE77AEFFF3 /* Pods_appjamTests.framework */,
 				48DA5B4DE0859CC7A95E7469 /* Pods_appjamUITests.framework */,
@@ -328,6 +332,9 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-appjam/Pods-appjam-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
@@ -337,6 +344,9 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
